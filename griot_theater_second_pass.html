@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>griot_theater_second_pass</title>
+
+    <style>
+        /* set the property and values for the flexbox container and how the broser manages the flexbox items inside 
+            There is a main axis that runs through the flex container.
+            The main axis runs in the same direction as the flex-direction:value   */
+
+        /* to do: revise flexbox-container an items to original pic requirement- where are requirements? */
+
+        .flexbox-container {
+            /* required to create the flexbox layout module */
+            display: flex;
+            background-color: yellow;
+
+            /* container items will be stackes as a row or column */
+            flex-direction: column;
+
+
+            /* Defines how the browser distributes space between and around flex items along the main-axis of their container
+            Space around items are evenly distributed
+            Defines alignment along the main access  */
+            justify-content: center;
+
+            /* Defines how the browser distributes space between and around flex items along the cross-axis of their container.
+            Works just like justify-content in the perpindicular direction.   */
+            align-items: center;
+        }
+
+
+        /* sets the property and values for all flexbox-items */
+        .flexbox-item {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+
+        /* sets the property and values for the first flexbox-item */
+        .flexbox-item-1 {
+            min-height: 100px;
+
+            /* specifies the inital main size of the container item, along the main axis of the flex container */
+            flex-basis: 0;
+
+            /* specifies how the item will grow relative to the other items. */
+            flex-grow: 1;
+
+            /* specifies how the item will shrink relative to the other items.  0 means to not shrink at all */
+            flex-shrink: 0;
+
+            align-self: center;
+            /* shorthand: growth, shrink, basis  flex:1 0 0px */
+        }
+
+        /* set the property and values for the second flexbox-item */
+        .flexbox-item-2 {
+            min-height: 100px;
+            flex-grow: 1;
+            flex-basis: 0;
+            align-self: center;
+
+
+        }
+
+        /* set the property and values for the third flexbox-item */
+        .flexbox-item-3 {
+            min-height: 100px;
+            flex-grow: 1;
+            flex-basis: 0;
+
+
+        }
+
+
+        .topnav {
+            display: flex;
+            align-items: center;
+            flex-basis: 10%;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            display: block;
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- how do I get Home and other elements to the right side of page?-->
+    <div class="topnav">
+        <a href="#">Griot Theater</a>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Our Actors</a>
+        <a href="#">Mission</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+    <!-- NAV BAR-->
+    <!-- to do: add a container class based on original pic requirement -->
+    <div class="container">
+        <img src="C:/Users/andre/Documents/class/class/week1/home_work/griot_theater/theater-image-background.png"
+            width="100%" height="10%" />
+        <div class="centered-text">Featured Shows </div>
+    </div>
+
+
+    <!-- FLEX-CONTAINER-->
+    <div class="flexbox-container">
+
+        <!-- to do: add a border class based on original pic requirement -->
+        <p class="border">April 2020</p>
+        <img src="C:/Users/andre/Documents/class/class/week1/home_work/griot_theater/a-raisin-in-the-sun-theater-1.png">
+
+        <!-- FLEX-ITEM 1-->
+        <div class="flexbox-item flexbox-item-1">
+            <h1>A Raisin In The Sun</h1>
+            <h2>April 6, 2020 - March 12, 2021</h2>
+            <h3>Griot Theater, 233 State St Chicago, IL</h3>
+            <h3>$75</h3>
+        </div>
+        <p class="button">Read More</p>
+
+
+        <p class="border">April 2020</p>
+        <img src="C:/Users/andre/Documents/class/class/week1/home_work/griot_theater/a-raisin-in-the-sun-theater-1.png">
+
+        <!-- FLEX-ITEM 2-->
+        <div class="flexbox-item flexbox-item-2">
+            <h1>A Raisin In The Sun</h1>
+            <h2>April 6, 2020 - March 12, 2021</h2>
+            <h3>Griot Theater, 233 State St Chicago, IL</h3>
+            <h3>$75</h3>
+        </div>
+        <p class="button">Read More</p>
+
+
+        <p class="border">April 2020</p>
+        <img src="C:/Users/andre/Documents/class/class/week1/home_work/griot_theater/a-raisin-in-the-sun-theater-1.png">
+
+        <!-- FLEX-ITEM 3-->
+        <div class="flexbox-item flexbox-item-2">
+            <h1>A Raisin In The Sun</h1>
+            <h2>April 6, 2020 - March 12, 2021</h2>
+            <h3>Griot Theater, 233 State St Chicago, IL</h3>
+            <h3>$75</h3>
+        </div>
+        <p class="button">Read More</p>
+
+
+        <p class="border">April 2020</p>
+        <img src="C:/Users/andre/Documents/class/class/week1/home_work/griot_theater/a-raisin-in-the-sun-theater-1.png">
+
+        <!-- FLEX-ITEM 4-->
+        <div class="flexbox-item flexbox-item-4">
+            <h1>A Raisin In The Sun</h1>
+            <h2>April 6, 2020 - March 12, 2021</h2>
+            <h3>Griot Theater, 233 State St Chicago, IL</h3>
+            <h3>$75</h3>
+        </div>
+        <p class="button">Read More</p>
+
+    </div>
+</body>
+
+</html>
